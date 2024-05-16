@@ -15,6 +15,13 @@
                 Console.WriteLine("Nombre " + item.Nombre + " " + "Edad " + item.Edad);
             }
 
+            var nuevoEstudiante = new Estudiante()
+            {
+                Nombre = "Ezequiel",
+                Edad = 18
+            };
+            miContexto.Estudiantes.Add(nuevoEstudiante);
+            miContexto.SaveChanges();
 
             Console.WriteLine("Fin");
         }
